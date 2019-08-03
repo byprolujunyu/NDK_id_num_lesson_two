@@ -1,0 +1,18 @@
+{
+  "buildFiles": [
+    "/Users/lujunyu/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
+    "/Users/lujunyu/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+    "/Users/lujunyu/NDK_ID_NUM/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/debug/x86_64\" --target clean"
+  ],
+  "libraries": {
+    "OpenCV-Debug-x86_64": {
+      "artifactName": "OpenCV",
+      "buildCommand": "/Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/debug/x86_64\" --target OpenCV",
+      "abi": "x86_64",
+      "output": "/Users/lujunyu/NDK_ID_NUM/app/build/intermediates/cmake/debug/obj/x86_64/libOpenCV.so"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "stringTable": {
+    "0": "/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/debug/x86_64",
+    "1": "--target=x86_64-none-linux-android21 --gcc-toolchain=/Users/lujunyu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64 --sysroot=/Users/lujunyu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DOpenCV_EXPORTS -I/Users/lujunyu/NDK_ID_NUM/app/src/main/cpp/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/Users/lujunyu/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
+    "/Users/lujunyu/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+    "/Users/lujunyu/NDK_ID_NUM/app/src/main/cpp/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/debug/x86_64\" --target clean"
+  ],
+  "libraries": {
+    "OpenCV-Debug-x86_64": {
+      "buildCommand": "/Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/debug/x86_64\" --target OpenCV",
+      "buildType": "debug",
+      "toolchain": "2345053053",
+      "abi": "x86_64",
+      "artifactName": "OpenCV",
+      "files": [
+        {
+          "src": "/Users/lujunyu/NDK_ID_NUM/app/src/main/cpp/native-lib.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/Users/lujunyu/NDK_ID_NUM/app/src/main/cpp/utils.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/Users/lujunyu/NDK_ID_NUM/app/build/intermediates/cmake/debug/obj/x86_64/libOpenCV.so"
+    }
+  },
+  "toolchains": {
+    "2345053053": {
+      "cppCompilerExecutable": "/Users/lujunyu/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

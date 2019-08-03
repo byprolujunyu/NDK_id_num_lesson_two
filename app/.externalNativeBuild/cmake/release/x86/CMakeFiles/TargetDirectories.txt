@@ -1,0 +1,3 @@
+/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/rebuild_cache.dir
+/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/edit_cache.dir
+/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/release/x86/CMakeFiles/OpenCV.dir
