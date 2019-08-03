@@ -42,7 +42,7 @@ rule CXX_SHARED_LIBRARY_LINKER__OpenCV
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/lujunyu/NDK_ID_NUM/app/src/main/cpp -B/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/release/armeabi-v7a
+  command = /Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake -H/Users/lujunyu/NDK_id_num_lesson_two/app/src/main/cpp -B/Users/lujunyu/NDK_id_num_lesson_two/app/.externalNativeBuild/cmake/release/armeabi-v7a
   description = Re-running CMake...
   generator = 1
 

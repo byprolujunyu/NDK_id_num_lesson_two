@@ -2,17 +2,17 @@
   "buildFiles": [
     "/Users/lujunyu/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
     "/Users/lujunyu/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
-    "/Users/lujunyu/NDK_ID_NUM/app/src/main/cpp/CMakeLists.txt"
+    "/Users/lujunyu/NDK_id_num_lesson_two/app/src/main/cpp/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/debug/arm64-v8a\" --target clean"
+    "/Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/lujunyu/NDK_id_num_lesson_two/app/.externalNativeBuild/cmake/debug/arm64-v8a\" --target clean"
   ],
   "libraries": {
     "OpenCV-Debug-arm64-v8a": {
       "artifactName": "OpenCV",
-      "buildCommand": "/Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/debug/arm64-v8a\" --target OpenCV",
+      "buildCommand": "/Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build \"/Users/lujunyu/NDK_id_num_lesson_two/app/.externalNativeBuild/cmake/debug/arm64-v8a\" --target OpenCV",
       "abi": "arm64-v8a",
-      "output": "/Users/lujunyu/NDK_ID_NUM/app/build/intermediates/cmake/debug/obj/arm64-v8a/libOpenCV.so"
+      "output": "/Users/lujunyu/NDK_id_num_lesson_two/app/build/intermediates/cmake/debug/obj/arm64-v8a/libOpenCV.so"
     }
   }
 }

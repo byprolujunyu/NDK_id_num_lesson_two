@@ -23,13 +23,11 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:clickable="true"
             android:id="@+id/previous"
             android:text="上一张"/>
 
         <Button
             android:layout_width="0dp"
-            android:clickable="true"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/next"
@@ -40,7 +38,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/rt"
-        android:clickable="true"
         android:text="识别"/>
 
     <TextView

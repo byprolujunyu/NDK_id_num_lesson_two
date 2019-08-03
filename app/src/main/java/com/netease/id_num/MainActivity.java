@@ -9,6 +9,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     static {
         System.loadLibrary("OpenCV");
     }
+
     private TessBaseAPI tessBaseApi;
     private String language = "ck";
     private AsyncTask<Void, Void, Boolean> asyncTask;
@@ -48,9 +50,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ActivityCompat.
                 requestPermissions(MainActivity.this,
                         new String[]{Manifest.permission.READ_EXTERNAL_STORAGE
-                                ,Manifest.permission.WRITE_EXTERNAL_STORAGE},
+                                , Manifest.permission.WRITE_EXTERNAL_STORAGE},
                         1);
     }
+
+    Button previous;
+    Button next;
+    Button rt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,9 +66,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         tesstext = (TextView) findViewById(R.id.tesstext);
         idCard.setImageResource(R.drawable.id_card0);
         //15
-        findViewById(R.id.previous).setOnClickListener(this);
-        findViewById(R.id.next).setOnClickListener(this);
-        findViewById(R.id.rt).setOnClickListener(this);
+        previous = findViewById(R.id.previous);
+        previous.setOnClickListener(this);
+        next = findViewById(R.id.next);
+        next.setOnClickListener(this);
+        rt = findViewById(R.id.rt);
+        rt.setOnClickListener(this);
         tessBaseApi = new TessBaseAPI();/////////////
         initTess();
     }
@@ -122,6 +131,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         };
         asyncTask.execute();
     }
+
     private void showProgress() {
         if (null != progressDialog) {
             progressDialog.show();
@@ -141,18 +151,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
-
     private native Bitmap findIdNumber(Bitmap bitmap, Bitmap.Config argb8888);
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.rt:
+                //rt.setClickable(false);
                 Bitmap bitmap = BitmapFactory.decodeResource(getResources(), ids[index]);
                 Bitmap idNumber = findIdNumber(bitmap, Bitmap.Config.ARGB_8888);
                 bitmap.recycle();
-                if (idNumber != null)
-                    idCard.setImageBitmap(idNumber);
+                if (idNumber != null) {
+
+                }
+                //idCard.setImageBitmap(idNumber);
                 else {
                     idNumber.recycle();
                     return;
@@ -162,24 +174,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //15 文字识别
                 tessBaseApi.setImage(idNumber);
                 tesstext.setText(tessBaseApi.getUTF8Text());
+             //   rt.setClickable(true);
                 break;
 
             case R.id.previous:
+                //revious.setClickable(false);
                 tesstext.setText(null);
                 index--;
                 if (index < 0) {
                     index = ids.length - 1;
                 }
                 idCard.setImageResource(ids[index]);
+             //   previous.setClickable(true);
                 break;
 
             case R.id.next:
+
                 tesstext.setText(null);
                 index++;
                 if (index >= ids.length) {
                     index = 0;
                 }
                 idCard.setImageResource(ids[index]);
+
                 break;
         }
 

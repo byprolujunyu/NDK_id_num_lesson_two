@@ -1,2 +1,1 @@
-[1/2] Building CXX object CMakeFiles/OpenCV.dir/native-lib.cpp.o
-[2/2] Linking CXX shared library /Users/lujunyu/NDK_ID_NUM/app/build/intermediates/cmake/debug/obj/x86/libOpenCV.so
+ninja: no work to do.

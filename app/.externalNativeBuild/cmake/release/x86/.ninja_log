@@ -1,0 +1,4 @@
+# ninja log v5
+1	9117	1564799288	CMakeFiles/OpenCV.dir/utils.cpp.o	489ddba6ed3b2daf
+0	9471	1564799289	CMakeFiles/OpenCV.dir/native-lib.cpp.o	a3d2b2e3c382df76
+9472	9635	1564799289	/Users/lujunyu/NDK_id_num_lesson_two/app/build/intermediates/cmake/release/obj/x86/libOpenCV.so	76e2485b33b9de91

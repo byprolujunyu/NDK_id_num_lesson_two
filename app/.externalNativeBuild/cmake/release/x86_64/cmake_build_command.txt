@@ -1,10 +1,10 @@
 Executable : /Users/lujunyu/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
 arguments : 
--H/Users/lujunyu/NDK_ID_NUM/app/src/main/cpp
--B/Users/lujunyu/NDK_ID_NUM/app/.externalNativeBuild/cmake/release/x86_64
+-H/Users/lujunyu/NDK_id_num_lesson_two/app/src/main/cpp
+-B/Users/lujunyu/NDK_id_num_lesson_two/app/.externalNativeBuild/cmake/release/x86_64
 -DANDROID_ABI=x86_64
 -DANDROID_PLATFORM=android-21
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/lujunyu/NDK_ID_NUM/app/build/intermediates/cmake/release/obj/x86_64
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/lujunyu/NDK_id_num_lesson_two/app/build/intermediates/cmake/release/obj/x86_64
 -DCMAKE_BUILD_TYPE=Release
 -DANDROID_NDK=/Users/lujunyu/Library/Android/sdk/ndk-bundle
 -DCMAKE_CXX_FLAGS=
